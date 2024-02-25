@@ -1,0 +1,123 @@
+.plan {
+    display: none;
+}
+.plan__text {
+    color: #36536b;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-left: 36px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 12px;
+        height: 12px;
+        background-image: url('/img/plan_icon.svg');
+        background-repeat: no-repeat;
+        top: 8px;
+        left: 0px;
+    }
+}
+.plan__box {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 45px;
+    margin-bottom: 24px;
+    border-top: 2px solid #C0CBD5;
+    border-bottom: 2px solid #C0CBD5;
+    text-align: left;
+
+    &:hover {
+        border-top: 2px solid #ed0000;
+        border-bottom: 2px solid #ed0000;
+        transition: all 0.5s ease;
+    }
+}
+
+.plan__item {
+    color: #C0CBD5;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding-left: 36px;
+}
+.plan__btn {
+    color: #36536b;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.12px;
+    box-sizing: border-box;
+    border: 1px solid #36536b;
+    border-radius: 24px;
+    padding: 16px 28px;
+
+    &:hover {
+        color: #36536b;
+        transform: scale(1.06);
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 28px -2px #000000b3;
+    }
+}
+
+.plan__box_hero{
+    margin-top: 24px;
+}
+
+.plan__block_box{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media screen and (min-width:689px) {
+
+    .plan__box_hero{
+        display: none;
+    }
+    .plan__block_box{
+        display: none;
+    }
+
+    .plan {
+        display: block;
+    }
+
+    .plan__box_head {
+        max-width: 223px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .plan__content {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .plan__none_box{
+        margin-top: 72px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .plan__box{
+        padding-left: 0;
+    }
+    .plan__box_head {
+        max-width: 350px;
+        text-align: left;
+    }
+    .plan__content{
+        gap: 30px;
+    }
+    .plan__none_box{
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+}
